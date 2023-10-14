@@ -1,27 +1,51 @@
-# React + TypeScript + Vite
+# React Template App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+This repository serves as a template for bootstrapping your React projects. It comes with a pre-configured tech stack to get you up and running as fast as possible.
 
-Currently, two official plugins are available:
+## How to Use This Template
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Click on the "Use this template" button to create a new repository based on this template.
+2. Clone your newly created repository.
+3. Run `yarn install` to install dependencies.
+4. Start building your React app.
 
-## Expanding the ESLint configuration
+## Accessing the App
+Once you've started the development server with `yarn dev`, you can access the app at `localhost:5174`.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Tech Stack
+- Yarn: 3.6.4
+- Node: 18.18.2
+- Vite: 4.4.5
+- React: 18.2.0
+- TypeScript: ^5.0.2
 
-- Configure the top-level `parserOptions` property like this:
+## Prerequisites
+This template assumes that you have [Volta](https://volta.sh/) installed for managing Node and Yarn versions. If you haven't installed it yet, please follow the official documentation.
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+## Configured Tools
+- **Yarn**: For managing dependencies and running scripts.
+- **ESLint**: For maintaining code quality and consistency.
+- **Prettier**: For automated code formatting.
+
+## Available Commands
+Here are some npm scripts for development.
+
+- `yarn dev`: Start the development server (access the app at `localhost:5174`)
+- `yarn build`: Compile TypeScript and build the production version
+- `yarn lint`: Lint the TypeScript files
+- `yarn lint-fix`: Auto-fix linting issues
+- `yarn format`: Format all supported files with Prettier
+- `yarn preview`: Preview the production build
+
+## Setup Instructions
+
+```bash
+# Install the dependencies
+yarn install
+
+# Start the development server
+yarn dev
+
+# Access the app at localhost:5174
 ```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
